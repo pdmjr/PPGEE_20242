@@ -1,0 +1,98 @@
+% Seção 2: Tecnologias Habilitadoras do 5G
+
+\section{Tecnologias Habilitadoras do 5G}
+\subsection{Redes Definidas por Software (SDN)}
+
+\begin{frame}
+    \frametitle{Introdução ao SDN}
+
+    \begin{itemize}
+        \item \textbf{Definição}: Arquitetura de rede que separa o plano de controle do plano de dados.
+        \item \textbf{Componentes Principais}: Aplicações de rede, controlador SDN, switches programáveis, interfaces.
+        \item \textbf{Vantagens}: Flexibilidade, centralização do controle, automação.
+    \end{itemize}
+    \begin{figure}
+        \centering
+        \subfloat[Tradicional]{\includegraphics[width=0.45\linewidth]{figs/rede_tradicional.png}}\qquad
+        \subfloat[SDN]{\includegraphics[width=0.45\linewidth]{figs/rede_sdn.png}}
+        \caption{Redes tradicionais vs SDN\footcite{Plane_Separation}}
+        \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Introdução ao SDN}
+    \begin{columns}
+        \begin{column}{0.55\textwidth}
+            \begin{itemize}
+                \item \textbf{Plano de Aplicação}: Controle dos recursos via programação.
+                \item \textbf{Plano de Controle}: Gerência centralizada dos recursos de rede.
+                \item \textbf{Plano de Dados}: Dispositivos de comutação físicos ou virtuais.
+                \item \textbf{Interfaces}: Comunicação entre os planos, ao norte (REST), sul (OpenFlow, P4), leste, oeste (API dos controladores).
+        \end{itemize}            
+        \end{column}
+        \begin{column}{0.45\textwidth}
+            \vspace{2cm}
+            \begin{figure}[h]
+                \centering
+                \includegraphics[width=0.8\textwidth]{figs/SDN_arquitetura.png}
+                \caption{Arquitetura SDN\footcite{Recommended_SDN_Wireless}}
+            \end{figure}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Integração SDN com 5G}
+    \begin{itemize}
+        \item \textbf{Automação de Redes}: Gerência dinâmica do tráfego e recursos.
+        \item \textbf{Casos de Uso}: Redes IoT, redes industriais, redes de campus.
+        \item \textbf{Network Slicing}: Criação de fatias para diferentes serviços.
+    \end{itemize}
+ %    \begin{figure}
+ %        \centering
+ %        \fbox{
+	%    \begin{minipage}{1in}
+	% 	  \hfill\vspace{1in}
+	%    \end{minipage}
+	% }
+ %        \caption{Integração SDN e 5G\footcite{Network_Slicing}}	
+    % \end{figure}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.8\textwidth]{figs/Network_Slicing.png}
+        \caption{Fatiamento de redes\footcite{Network_Slicing}}
+    \end{figure}
+\end{frame}
+
+\subsection{Virtualização das Funções de Rede (NFV)}
+\begin{frame}
+    \frametitle{Introdução ao NFV}
+    \begin{itemize}
+        \item \textbf{Definição}: Abstração das funções de rede do hardware proprietário, executando-as em servidores padrão.
+        \item \textbf{Componentes Principais}: VNF (Funções de Rede Virtualizadas), NFVI (Infraestrutura de Virtualização).
+        \item \textbf{Vantagens}: Redução de custos, flexibilidade, rapidez na introdução de serviços.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Integração NFV com 5G}
+    \begin{itemize}
+        \item \textbf{Virtualização do EPC (Evolved Packet Core)}: Gestão centralizada e flexível do core da rede.
+        \item \textbf{vRAN (Virtualized Radio Access Network)}: Otimização da rede de acesso rádio.
+        \item \textbf{Edge Computing}: Suporte a aplicações de baixa latência e alta demanda.
+    \end{itemize}
+ %    \begin{figure}
+ %        \centering
+ %        \fbox{
+	%    \begin{minipage}{1in}
+	% 	  \hfill\vspace{1in}
+	%    \end{minipage}
+	% }
+ %        \caption{Arquitetura NFV no 5G}	
+ %    \end{figure}
+    % \begin{figure}[h]
+    %     \centering
+    %     \includegraphics[width=0.8\textwidth]{NFV.png}
+    %     \caption{Arquitetura NFV no 5G\footcite{Network_Slicing}}
+    % \end{figure}
+\end{frame}
