@@ -4,13 +4,16 @@
 \usepackage{appendixnumberbeamer}
 \usepackage{hyperref}
 \usepackage{tikz}
-\usetikzlibrary{calc,decorations.pathreplacing,snakes}
+% \usetikzlibrary{calc,decorations.pathreplacing,snakes}
+\usetikzlibrary{calc,decorations.pathreplacing}
 \usepackage{multicol}
 \usepackage{comment}
 \usepackage[portuguese]{babel}
-\usepackage[style=authortitle,backend=bibtex]{biblatex}
+% \usepackage[style=authortitle,backend=bibtex]{biblatex}
+\usepackage[style=authortitle,backend=biber]{biblatex}
 \addbibresource{references.bib}
 \usepackage{subfig}
+\usepackage{csquotes}
 
 \hypersetup{colorlinks=true,linkcolor=,urlcolor=blue}
 
@@ -54,14 +57,14 @@
 \setbeamerfont{footnote}{size=\scriptsize}
 
 % \renewcommand{\footnotesize}{\small}
-\renewcommand*{\bibfont}{\tiny}
+% \renewcommand*{\bibfont}{\tiny}
 
 % Slide de Título
 \title{Integração do 5G com Tecnologias Habilitadoras nas Telecomunicações}
 % \subtitle{Subtítulo}
-\date{\today}
-% \date{}
-\author{\textbf{Prof. Paulo Ditarso Maciel Jr.}}
+% \date{\today}
+\date{30 de agosto de 2024}
+\author{\textbf{Prof. Dr. Paulo Ditarso Maciel Jr.}}
 \institute{
 \centering
 \normalsize
@@ -80,7 +83,7 @@
 
 \maketitle
 
-\input{sections/00_frontpage}
+\input{sections/00_disclaimer}
 
 \input{sections/01_intro}
 
@@ -100,7 +103,7 @@
 
 \begin{frame}{}
   \centering \Large
-  \emph{\textbf{Sejam bem-vindos!!}}
+  \textbf{Sejam bem-vindos!!}
 \end{frame}
 
 \end{document}
